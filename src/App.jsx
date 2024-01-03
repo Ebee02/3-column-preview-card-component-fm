@@ -3,12 +3,12 @@ import "./index.css";
 function App() {
   return (
     <>
-      <main className="flex items-center justify-center py-6 text-[15] bg-[#f2f2f2]">
+      <main className="antialiased flex flex-col items-center justify-center p-6  text-[15] bg-[#f2f2f2]">
         {/* <!-- main-section code starts --> */}
-        <section className="main-section w-[300px] max-w-[300px] grid grid-cols-1">
+        <section className="main-section  w-[300px] md:w-[1000px] max-w-[300px] md:max-w-[1440px] grid grid-cols-1  md:grid-cols-3">
           {/* <!-- first-container code starts --> */}
-          <div className="first-container bg-[#e38826] rounded-t-lg p-6">
-            <div className="icon mb-5">
+          <div className="first-container bg-[#e38826] rounded-t-lg md:rounded-none md:rounded-tl-lg md:rounded-bl-lg p-6">
+            <div className="icon mb-5 md:mb-9">
               <i>
                 <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
                   <g fill="none" fill-rule="evenodd">
@@ -22,14 +22,14 @@ function App() {
                 </svg>
               </i>
             </div>
-            <h2 className="heading text-[#f2f2f2] text-4xl font-semibold uppercase tracking-tight mb-5">
+            <h2 className="heading text-[#f2f2f2] text-4xl md:text-5xl font-semibold uppercase tracking-tight mb-5 md:mb-9">
               Sedans
             </h2>
-            <p className="paragragh  text-[#ffffffbf]  tracking-wider mb-8">
+            <p className="paragragh  text-[#ffffffbf] md:text-xl md:leading-8 tracking-wider mb-8 md:mb-16">
               Choose a sedan for its affordability and excellent fuel economy.
               Ideal for cruising in the city or on your next road trip.
             </p>
-            <a className="btn cursor-pointer py-3 px-6 rounded-full bg-[#f2f2f2] text-[#e38826] font-medium tracking-wide">
+            <a className="btn cursor-pointer py-3 px-6 rounded-full bg-[#f2f2f2] text-[#e38826]  font-medium tracking-wide">
               Learn More
             </a>
           </div>
@@ -37,7 +37,7 @@ function App() {
 
           {/* <!-- second-container code start --> */}
           <div className="second-container bg-[#006970] p-6">
-            <div className="icon mb-5">
+            <div className="icon mb-5 md:mb-9">
               <i>
                 <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
                   <g fill="none" fill-rule="evenodd">
@@ -51,22 +51,22 @@ function App() {
                 </svg>
               </i>
             </div>
-            <h2 className="heading text-[#f2f2f2] text-4xl font-semibold uppercase tracking-tight mb-5">
+            <h2 className="heading text-[#f2f2f2] text-4xl md:text-5xl font-semibold uppercase tracking-tight mb-5 md:mb-9">
               SUVs
             </h2>
-            <p className="paragragh text-[#ffffffbf]  tracking-wider mb-8">
+            <p className="paragragh text-[#ffffffbf] md:text-xl md:leading-8 tracking-wider mb-8 md:mb-16">
               Take an SUV for its spacious interior, power, and versatility.
               Perfect for your next family vacation and off-road adventures.
             </p>
-            <button className="btn cursor-pointer py-3 px-6 rounded-full bg-[#f2f2f2] text-[#006970] font-medium tracking-wide">
+            <button className="btn cursor-pointer py-3 px-6 rounded-full text-[#006970] bg-[#f2f2f2] font-medium tracking-wide">
               Learn More
             </button>
           </div>
           {/* <!-- second-container code end --> */}
 
           {/* <!-- third-container code starts --> */}
-          <div className="third-container bg-[#004241] rounded-b-lg p-6">
-            <div className="mb-5">
+          <div className="third-container bg-[#004241] rounded-b-lg md:rounded-none md:rounded-tr-lg md:rounded-br-lg  p-6">
+            <div className="mb-5 md:mb-9">
               <i>
                 <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
                   <g fill="none" fill-rule="evenodd">
@@ -80,10 +80,10 @@ function App() {
                 </svg>
               </i>
             </div>
-            <h2 className="heading text-[#f2f2f2] text-4xl font-semibold uppercase tracking-tight mb-5">
+            <h2 className="heading text-[#f2f2f2] text-4xl md:text-5xl font-semibold uppercase tracking-tight mb-5 md:mb-9">
               Luxury
             </h2>
-            <p className="paragragh text-[#ffffffbf]  tracking-wider mb-8">
+            <p className="paragragh text-[#ffffffbf] md:text-xl md:leading-8 tracking-wider mb-8 md:mb-16">
               Cruise in the best car brands without the bloated prices. Enjoy
               the enhanced comfort of a luxury rental and arrive in style.
             </p>
@@ -94,6 +94,13 @@ function App() {
           {/* <!-- third-container code end --> */}
         </section>
         {/* <!-- main-section code end --> */}
+        <div class="attribution m-6">
+          Challenge by{" "}
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+          . Coded by <a href="#">Lawrence E. Bee</a>.
+        </div>
       </main>
     </>
   );
